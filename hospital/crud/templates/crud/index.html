@@ -1,0 +1,18 @@
+{% extends 'crud/base.html' %}
+
+{% comment %}  Title block started{% endcomment %}
+{% block title%} home page {% endblock %}
+
+
+{% comment %} Contant block started{% endcomment %}
+{% block contant %}
+
+<br><br><br>
+    
+    
+    <div class="container col-6 alert-danger text-center">
+        <br>
+        <a href= "{% url 'fillform' %}"<span class=""><h2>New Patient click here for Registration</h2></span>
+        </a><br>
+        </div>
+{% endblock contant %}

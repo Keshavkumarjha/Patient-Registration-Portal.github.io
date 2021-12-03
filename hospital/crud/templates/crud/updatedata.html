@@ -1,0 +1,21 @@
+{% extends 'crud/base.html' %}
+{% block contant %}
+<br>
+<div class="row"> 
+    
+ <div class="col-sm-5 offset-2">
+<h3 class="alert alert-info">Update information</h3>
+{% load crispy_forms_tags %}
+<form action=''method='post'>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <br>
+    <input type="submit"class='btn btn-success' value=Update>
+</form>
+
+
+
+
+</div></div>
+{% endblock contant %}
+
